@@ -1,0 +1,11 @@
+driver_id,driver_name,driver_type,experience_years,assigned_vehicle_id,base_driver_score
+D001,Driver_1,Safe,11,VH001,92
+D002,Driver_2,Safe,10,VH002,86
+D003,Driver_3,Safe,15,VH003,92
+D004,Driver_4,Normal,10,VH004,78
+D005,Driver_5,Normal,4,VH005,79
+D006,Driver_6,Normal,8,VH006,71
+D007,Driver_7,Normal,10,VH007,73
+D008,Driver_8,Aggressive,6,VH008,51
+D009,Driver_9,Aggressive,5,VH009,45
+D010,Driver_10,Aggressive,2,VH010,42

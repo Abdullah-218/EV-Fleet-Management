@@ -1,0 +1,11 @@
+vehicle_id,brand,car_name,manufacture_year,battery_capacity_kwh,max_range_km,vehicle_weight_kg,motor_power_kw,battery_health_pct,battery_cycles,odometer_km,brake_wear_pct,suspension_health_pct,days_since_last_service,vehicle_condition,vehicle_active
+VH001,Volkswagen,ID.4,2022,77.0,520,2100,150,82.4,604,15227,10.15,93.91,61,1,1
+VH002,Volkswagen,ID.4 Pro,2022,82.0,550,2200,150,89.34,608,27261,18.17,89.1,42,1,1
+VH003,Volkswagen,ID.5,2023,82.0,530,2200,174,80.23,450,14119,9.41,94.35,24,1,1
+VH004,Tata,Nexon EV,2021,40.5,465,1400,95,95.2,387,35686,23.79,85.73,173,1,1
+VH005,Tata,Curvv EV,2024,55.0,585,1500,123,95.29,1004,119933,79.96,52.03,9,1,1
+VH006,Tata,Punch EV,2024,35.0,421,1250,90,96.57,802,34700,23.13,86.12,151,1,1
+VH007,Hyundai,Kona EV,2021,39.2,452,1685,100,82.58,822,104801,69.87,58.08,27,1,1
+VH008,Hyundai,Kona Long Range,2022,64.0,484,1750,150,95.31,696,42720,28.48,82.91,157,1,1
+VH009,Hyundai,Creta EV,2024,51.4,473,1600,126,85.81,990,114669,76.45,54.13,76,1,1
+VH010,Hyundai,Creta EV Pro,2025,55.0,490,1650,135,89.35,668,85704,57.14,65.72,27,1,1
