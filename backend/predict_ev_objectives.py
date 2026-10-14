@@ -6,7 +6,10 @@ Uses the trained model packages in ./models:
   - battery_model.pkl  : battery degradation objective
   - rul_model.pkl      : remaining useful life objective
 
-Run:
+Run from the repository root:
+  python3 backend/predict_ev_objectives.py
+
+Or run from inside ./backend:
   python3 predict_ev_objectives.py
 """
 
@@ -14,13 +17,15 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass, asdict
+from pathlib import Path
 
 import joblib
 import pandas as pd
 
 
-MODEL_DIR = os.getenv("MODEL_DIR", "models")
-DATASET_DIR = os.getenv("DATASET_DIR", "dataset")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+MODEL_DIR = os.getenv("MODEL_DIR", str(PROJECT_ROOT / "ml" / "models"))
+DATASET_DIR = os.getenv("DATASET_DIR", str(PROJECT_ROOT / "ml" / "dataset"))
 
 
 def _load_model(name: str) -> dict:

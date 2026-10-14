@@ -7,7 +7,10 @@ Loads trained pickle packages from ./models and exposes JSON endpoints for:
   - remaining useful life prediction
   - combined prediction
 
-Run:
+Run from the repository root:
+  uvicorn backend.app:app --host 0.0.0.0 --port 8000 --reload
+
+Or run from inside ./backend:
   uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 """
 
@@ -15,6 +18,7 @@ from __future__ import annotations
 
 import logging
 import os
+from pathlib import Path
 from typing import Literal
 
 import joblib
@@ -24,7 +28,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 
-MODEL_DIR = os.getenv("MODEL_DIR", "models")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+MODEL_DIR = os.getenv("MODEL_DIR", str(PROJECT_ROOT / "ml" / "models"))
 
 logging.basicConfig(
     level=logging.INFO,
